@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "firebase": "^9.7.0",
+    "firebase-tools": "^10.7.2",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router": "^6.3.0",
