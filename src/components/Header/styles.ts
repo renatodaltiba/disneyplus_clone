@@ -108,3 +108,48 @@ export const Login = styled.a`
     cursor: pointer;
   }
 `
+
+export const UserImg = styled.img`
+  height: 100%;
+`
+
+export const DropDown = styled.div`
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background: rgb(19, 19, 19);
+  border: 1px solid rgba(151, 151, 151, 0.334);
+  border-radius: 4px;
+  box-shadow: rgb(0 0 0 / 50%) 0 0 18px 0;
+  padding: 10px;
+  font-size: 14px;
+  letter-spacing: 3px;
+  width: 110px;
+  opacity: 0;
+
+  display: flex;
+  justify-content: center;
+`
+
+export const SignOut = styled.div`
+  position: relative;
+  height: 48px;
+  width: 48px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+
+  ${UserImg} {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+  }
+
+  &:hover {
+    ${DropDown} {
+      opacity: 1;
+      transition-duration: 1s;
+    }
+  }
+`
